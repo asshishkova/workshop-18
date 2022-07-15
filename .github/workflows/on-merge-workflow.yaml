@@ -6,7 +6,12 @@ name: on-merge-workflow
 
 on:
 # [to be filled]
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+
 jobs:
+  if: github.event.pull_request.merged == 'true'
   test:
     runs-on: # [to be filled]
     steps:
