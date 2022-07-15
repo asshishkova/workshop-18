@@ -11,7 +11,8 @@ on:
   workflow_dispatch:
 jobs:
   test:
-    runs-on: ubuntu-latest # [to be filled]
+    runs-on: ubuntu-latest
+    # [to be filled]
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
